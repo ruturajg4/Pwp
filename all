@@ -1,0 +1,296 @@
+#1 Write a Program to find the area of a triangle. 
+'''a=int(input("enter breadth: "))
+b=int(input("enter height: "))
+
+print("area of trangle is:",0.5*a*b)'''
+
+
+#2 Write a Program to swap two variables. 
+''''a=int(input("enter value of a: "))
+b=int(input("enter value of b: "))
+c=b
+b=a
+a=c
+print("value of a is",a)
+print("value of b is",b)'''
+
+
+#3 Write a Program to calculate area and perimeter of the square. 
+'''class square():
+
+    def area(self,s):
+        print("area of square is:",s*s)
+
+    def perimeter(self,s):
+        print("perimeter of square is:",4*s)
+obj=square()
+obj.area(2)
+obj.perimeter(2)'''
+
+
+#4 Write a Program to convert bits to Megabytes, Gigabytes and Terabytes 
+'''a=int(input("enter a bit:"))
+b=a/(8*1024*1024)
+print("bit to megabyte is:",b)
+c=a/(8*1024*1024*1024)
+print("bit to gigabyte is:",c)
+d=a/(8*1024*1024*1024*1024)
+print("bit to terabyte is:",d)'''
+
+
+#5 Write a Program to Check if a Number is Odd or Even 
+'''a=int(input("enter number:"))
+if (a%2==0):
+    print("value is even",a)
+else:
+    print("value is odd",a)'''
+    
+
+#6 Write a Program to Check Leap Year 
+'''a=int(input("enter year:"))
+if a%4==0:
+    print("a is leap year")
+else:
+    print("a is not a leap year")'''
+    
+
+#7 Write a Program to Check if a Number is Positive, Negative or Zero
+'''a=int(input("enter number:"))
+if a>0:
+    print("a is positive")
+if a<0:
+    print("a is negative")
+if a==0:
+    print("a is zero")'''
+    
+    
+
+#8 Write a Program to Print the Fibonacci series 
+
+'''num=int(input("enter number for fibo series"))
+n1,n2=0,1
+print("fibo series:",n1,n2,end=" ")
+for i in range(2,num):
+    n3=n1+n2
+    n1=n2
+    n2=n3
+    print(n3,end=" ")
+print()'''
+
+
+#9 Write a Program  to Find the Factorial of a Number 
+
+'''n=int(input("enter number:"))
+fact=1
+if n<0:
+    print("no factorial for negative number")
+elif n==0:
+    print("factorial of o is 1")
+else:
+    for i in range(1,n+1):
+        fact*=i
+        print("the factorial of",n,"is",fact)'''
+        
+
+#10 Write a Python Program to sum of all items in a list. 
+'''l=[10,20,30,40]
+print(sum(l))'''
+
+
+#11 Write a Program to get the largest number from a list. 
+'''l=[11,20,30,43,50]
+print(max(l))'''
+
+
+#12 Write a Program to get the smallest number from a list. 
+'''l=[11,20,30,43,50]
+print(min(l))'''
+
+
+#13 Write a Program to reverse a list
+'''l=[11,20,30,43,50]
+l.reverse()
+print(l)'''
+
+
+#14 Write a Python Program to select even items of a list. 
+'''l=[11,20,30,43,50]
+even=[i for i in l if i % 2==0]
+print(even)'''
+
+
+#15 Write a Python Program to fine the repeated items from a tuple. 
+'''
+t=(1,2,3,4,5,5,6,6,7)
+print(t.count(5))'''
+
+
+#16 Write a Python Program ,print the number in words for example:1234=> One Two three Four 
+'''def number_to_word(n):
+    words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+    digits = []
+    while n > 0:
+        digit = n % 10
+        digits.insert(0, words[digit])
+        n = n // 10
+    return tuple(digits)
+
+n = 1255
+digit = number_to_word(n)
+print(digit)'''
+
+
+#17 Write a Python Program to find the length of a set
+'''s={1,2,3,4,5,6,7}
+print(len(s))'''
+
+
+#18 Write a Python Program to find maximum and minimum value in a set. 
+'''s={1,2,3,4,5,6,7}
+print(max(s))
+print(min(s))'''
+
+
+#19 Write a Python Program to find the highest 3 values in a dictionary. 
+'''d = {'a': 50, 'b': 60, 'c': 80, 'd': 90, 'e': 46}
+high = sorted(d.items(), key=lambda x: x[1], reverse=True)[:3]
+
+for item in high:
+    print(item[0], ":", item[1])'''
+    
+
+#20 Write a Python  Script to sort a dictionary by value(asc and desc) 
+'''d = {'a': 50, 'b': 60, 'c': 80, 'd': 90, 'e': 46}
+sorted_asc = sorted(d.items(), key=lambda x: x[1])
+sorted_desc = sorted(d.items(), key=lambda x: x[1], reverse=True)
+print("Ascending order",sorted_asc)
+print("Descending order",sorted_desc)'''
+
+
+#21Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters
+'''def count_upper_lower(string):
+    uppercase_count = 0
+    lowercase_count = 0
+
+    for char in string:
+        if char.isupper():
+            uppercase_count += 1
+        elif char.islower():
+            lowercase_count += 1
+
+    return uppercase_count, lowercase_count
+text = "Hello World"
+upper, lower = count_upper_lower(text)
+print("Uppercase letters:", upper)
+print("Lowercase letters:", lower)'''
+
+
+#22Write a Python Program to Find Factorial of Number
+'''n=int(input("enter number:"))
+fact=1
+if n<0:
+    print("no factorial for negative number")
+elif n==0:
+    print("factorial of o is 1")
+else:
+    for i in range(1,n+1):
+        fact*=i
+        print("the factorial of",n,"is",fact)'''
+        
+
+#23 Write a Python Program to Display Calendar of given month using Calendar Module 
+'''import calendar
+yy=2023
+mm=5
+print(calendar.month(yy,mm))'''
+
+
+#24Write a Python Program that will calculate area and circumference of circle using inbuilt Math Module 
+'''import math
+radius=float(input("enter radius of circle:"))
+area = math.pi * radius ** 2
+circumference = 2 * math.pi * radius
+print("Circle Area:",area)
+print("Circle Circumference:",circumference)'''
+
+
+#25 Write a Python program to check for ZeroDivisionError Exception. 
+'''try:
+    dividend = int(input("Enter the dividend: "))
+    divisor = int(input("Enter the divisor: "))
+
+    result = dividend / divisor
+    print("Result:", result)
+
+except ZeroDivisionError:
+    print("Error: Division by zero is not allowed.")'''
+    
+
+#26 Write a Python program to calculate the sum of a list of numbers
+'''l=[10,20,30,40]
+print(sum(l))'''
+
+
+#27Write a Program to print ASCII Value of a character in python? 
+'''character = input("Enter a character: ")
+ascii_value = ord(character)
+print("ASCII value of", character, "is", ascii_value)'''
+
+
+#28 Write a Program to  Read more than one charactes at a time from file(use any file) 
+'''file_path = "path/to/your/file.txt"
+file = open(file_path, "r")
+characters = file.read(5)
+print("Read characters:", characters)
+file.close()'''
+
+
+
+#29 Python program to find the circumference and area of a circle with a given radius 
+'''import math
+radius=float(input("enter radius of circle:"))
+area = math.pi * radius ** 2
+circumference = 2 * math.pi * radius
+print("Circle Area:",area)
+print("Circle Circumference:",circumference)'''
+
+
+#30Python program to delete an element from a list by index 
+'''l=[12,23,55,84,9,54,6,5,99]
+del l[5]
+print(l)'''
+
+
+#31Python program to display all integers within the range 100-200 whose sum of digits is an even number 
+'''def sum_of_digits(num):
+    sum_digits = sum(int(digit) for digit in str(num))
+    return sum_digits
+start = 100
+end = 200
+for num in range(start, end + 1):
+    if sum_of_digits(num) % 2 == 0:
+        print(num)'''
+        
+
+#32 Python program to find the sum of all items in a dictionary 
+'''d = {"A": 10, "B": 20, "C": 30, "D": 40}
+v=d.values()
+print("Sum of all items in the dictionary:",sum(v))'''
+
+
+#33Python program to swap two elements in a list 
+'''def swap(self, index1, index2):
+    self[index1],self[index2] = self[index2], self[index1]
+    
+l = [1, 2, 3, 4, 5]
+a = 1
+b = 3
+swap(l,a,b)
+print("Swapped List:",l)'''
+
+
+#35 Python program to print all even numbers in a range 
+'''for number in range(100,200):
+        if number % 2 == 0:
+            print(number)'''
+
